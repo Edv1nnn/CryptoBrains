@@ -1,0 +1,640 @@
+/* Reset CSS
+====================*/
+@import url("reset.css");
+/*====================*/
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+/*====================*/
+
+/* :root {
+
+} */
+
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+
+    color: #fff;
+
+    background-color: #131517;
+}
+
+/*====================*/
+
+/* Page
+====================*/
+.page {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+/*====================*/
+
+/* Container
+====================*/
+.container {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*====================*/
+
+/* Header
+====================*/
+
+.header {
+    background-color: #1E1F25;
+}
+
+.container {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.header__logo {
+    padding-right: 40px;
+
+    border-right: 1px solid #ADB3BF;
+}
+
+
+.nav__list {
+    display: flex;
+    gap: 66px;
+}
+
+.nav__list-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ADB3BF;
+
+    transition: color 0.6s ease;
+}
+
+.nav__list-link:hover {
+    color: #cfd1d4;
+}
+
+.nav__list-link svg {
+    vertical-align: middle;
+}
+
+.header__btn-link {
+    padding: 12px 38px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    border: none;
+}
+
+.header__btn-link--active {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+    background-color: #1B70F1;
+    border-radius: 4px;
+
+    transition: background-color 0.6s ease;
+}
+
+.header__btn-link--active:hover {
+    background-color: #094094;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+/* Intro
+====================*/
+
+.intro__inner {
+    width: 100%;
+    max-width: 912px;
+    padding-top: 161px;
+}
+
+.intro__subtitle {
+    margin-bottom: 10px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1B70F1;
+}
+
+.intro__subtitle:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 2px;
+
+    background-color: #1B70F1;
+}
+
+.intro__title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 121px;
+    color: #F7FAFF;
+}
+
+.intro__text {
+    margin-bottom: 40px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ADB3BF;
+}
+
+.intro__link {
+    margin-bottom: 175px;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 30px;
+    padding: 12px 45px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+    background-color: #1B70F1;
+    border-radius: 4px;
+}
+
+.intro__link-btn:last-child {
+    margin: 0;
+}
+
+.intro__link-btn--active {
+    padding: 12px 30px;
+
+    background-color: transparent;
+    border: 1px solid #ADB3BF;
+}
+
+.intro__crypto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.intro__crypto-item {
+    border-right: 1px solid #ADB3BF;
+}
+
+.intro__crypto-about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    padding-right: 40px;
+
+}
+
+.intro__crypto-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ADB3BF;
+}
+
+.intro__crypto-num {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #06B470;
+}
+
+.intro__crypto-num svg {
+    vertical-align: middle;
+}
+
+.intro__crypto-price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+/* Trends
+====================*/
+
+.trends {
+    padding-top: 120px;
+    border-bottom: 1px solid #ADB3BF;
+}
+
+.trends__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 73px;
+}
+
+.trends__nav-list {
+    display: flex;
+    gap: 38px;
+}
+
+.trends__nav-link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ADB3BF;
+}
+
+/* Crypto
+====================*/
+
+.crypto {
+    margin-top: 60px;
+
+    text-align: center;
+}
+
+.crypto__row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.crypto__item {
+    padding: 5px;
+
+    text-align: center;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.crypto__item svg {
+    margin-top: 10px;
+}
+
+.crypto__btn {
+    margin: 60px 0 120px 0;
+}
+
+.crypto__btn svg {
+    vertical-align: middle;
+}
+
+.crypto__item-title {
+    margin: 20px 0 10px 0;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.crypto__item-num {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #06B470;
+}
+
+.crypto__item-num--red {
+    color: #F74E2C;
+}
+
+.crypto__item-price {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+/* About
+====================*/
+
+.about {
+    padding: 120px 0;
+
+    background-color: #1E1F25;
+}
+
+.about__inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.about__title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 73px;
+}
+
+.about__text {
+    margin-bottom: 60px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ADB3BF
+}
+
+.about__row {
+    display: flex;
+    gap: 30px;
+
+    border-top: 1px solid #ccc;
+}
+
+.about__item {
+    padding: 60px 15px;
+    margin-top: 60px;
+
+    text-align: center;
+
+    background-color: #272A34;
+    border-radius: 10px;
+}
+
+.about__item-title {
+    margin: 40px 0;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.about__item-text {
+    margin-bottom: 52px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ADB3BF;
+}
+
+.about__item-link {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about__item-link svg {
+    vertical-align: middle;
+}
+
+/* Download
+====================*/
+
+.download {
+    padding: 120px 0;
+}
+
+.download__inner {
+    width: 100%;
+    max-width: 850px;
+}
+
+.download__title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 73px;
+}
+
+.download__text {
+    margin-bottom: 90px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ADB3BF;
+}
+
+.download__link {
+    display: flex;
+    gap: 25px;
+}
+
+/* Footer
+====================*/
+
+.footer {
+    background-color: #1E1F25;
+}
+
+.footer__top {
+    padding: 120px 0 60px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__link {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__link-nav {
+    vertical-align: middle;
+}
+
+.footer__middle {
+    padding: 60px 0 66px 0;
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__title {
+    margin-bottom: 22px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FDFDFD;
+}
+
+.footer__nav-item {
+    margin-bottom: 18px;
+}
+
+.footer__nav-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ADB3BF;
+}
+
+.footer__lang-link {
+    display: inline-block;
+    padding: 10px 20px;
+
+    background-color: transparent;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+.footer__bottom {
+    padding: 66px 0;
+}
+
+.footer__copyright {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FDFDFD;
+}
+
+.footer__lang-link svg {
+    vertical-align: middle;
+}
+
+/* Media
+====================*/
+
+@media (max-width:375px) {
+    .header__logo {
+        border-right: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .intro__title {
+        font-size: 40px;
+        line-height: 1.3;
+    }
+
+    .intro__link-btn {
+        margin-bottom: 20px;
+    }
+
+    .intro__link-btn:last-child {
+        margin: 0;
+    }
+
+    .intro__crypto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .intro__crypto-item {
+        margin-bottom: 10px;
+        width: 100%;
+
+        border-bottom: 1px solid #ccc;
+        border-right: none;
+    }
+
+    .intro__crypto-item:last-child {
+        margin: 0;
+    }
+
+    .trends__nav {
+        display: none;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .crypto__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .crypto__item {
+        width: 100%;
+    }
+
+    .about__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .download__title {
+        font-size: 30px;
+    }
+
+    .download__text {
+        font-size: 15px;
+    }
+
+    .download__link {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__logo {
+        margin-bottom: 20px;
+    }
+
+    .footer__top {
+        display: block;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__lang-link {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer__lang-link:last-child {
+        margin: 0;
+    }
+}
